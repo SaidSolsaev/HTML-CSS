@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velkommen til BILHUSET</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="Bilder/logo.JPG" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HJEM</a></li>
+            <li><a href="bilene.html">BILENE</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+            <li><a href="Om_oss.html">OM OSS</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-ellipsis-h" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Noen av de fineste og raskete bilene</h1>
+        <p>
+          På denne nettsiden her finner du noen av de fineste og raskeste bilene
+          som finnes ute i verden.<br />
+          Bla nedover for å se på bilene og informasjon om de.<br />
+          Garanterte du vil forelske deg i minst en av de!
+        </p>
+        <a href="bilene.html" class="besøk">Besøk oss for å mer informasjon</a>
+      </div>
+    </section>
+
+    <!-----BLOG----->
+
+    <section class="BLOGG">
+      <h1>Vår blogg</h1>
+      <p>aaaaaa</p>
+
+      <div class="row">
+        <div class="blogg-col">
+          <h3>Prøvekjøre</h3>
+          <p>Kontakt oss for å prøvekjøre</p>
+        </div>
+        <div class="blogg-col">
+          <h3>Bilder</h3>
+          <p>aaaaaaa</p>
+        </div>
+        <div class="blogg-col">
+          <h3>Informasjon om bilene</h3>
+          <p>aaaaaaa</p>
+        </div>
+      </div>
+    </section>
+
+    <!----- bilene ----->
+
+    <section class="bilene">
+      <h1>Bilene våres</h1>
+      <p>Dette er de mest populære bilene</p>
+
+      <div class="row">
+        <div class="bilene-col">
+          <img src="bilder/bmw_m3.jpg" />
+          <div class="layer">
+            <h3>BMW M3</h3>
+          </div>
+        </div>
+        <div class="bilene-col">
+          <img src="bilder/bmw_m4.jpg" />
+          <div class="layer">
+            <h3>BMW M4</h3>
+          </div>
+        </div>
+        <div class="bilene-col">
+          <img src="bilder/e63s.jpg" />
+          <div class="layer">
+            <h3>Mercedes-Benz E63s</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- kall til Kontakt ----->
+
+    <section class="ktk">
+      <h1>
+        LURER PÅ NOE OM BILER <br />KONTAKT OSS FRA HVOR SOM HELST I VERDEN
+      </h1>
+      <a href="kontakt.html" class="besøk">KONTAKT OSS</a>
+    </section>
+
+    <!----- Footer ----->
+
+    <section class="footer">
+      <h2>Om Oss</h2>
+      <p>
+        Informasjon om oss: <br />Vi er en gruppe som spesialiserer oss innen
+        for biler
+      </p>
+      <div class="icons">
+        <i class="fas fa-facebook"></i>
+        <i class="fas fa-twitter"></i>
+        <i class="fas fa-instagram"></i>
+        <i class="fas fa-linkedin"></i>
+      </div>
+      <p>Made by Said-Magomed Solsaev</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

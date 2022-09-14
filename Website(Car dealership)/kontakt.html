@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velkommen til BILHUSET</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Bilder/logo.JPG" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HJEM</a></li>
+            <li><a href="bilene.html">BILENE</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+            <li><a href="Om_oss.html">OM OSS</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-ellipsis-h" onclick="showMenu()"></i>
+      </nav>
+      <h1>Kontakt Oss</h1>
+    </section>
+
+    <!----- Kontakt oss ----->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30907134.85556241!2d124.06648754999998!3d61.783213499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5c87ebbaf5e77a3b%3A0x2c4412982b67464c!2sSibir%2C%20Russland!5e0!3m2!1sno!2sno!4v1635248191070!5m2!1sno!2sno"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section class="kontakt-oss">
+      <div class="row">
+        <div class="kontakt-col">
+          <div>
+            <i class="fas fa-home"></i>
+            <span>
+              <h5>XYZ Veien, ABC Bygning</h5>
+              <p>Bangalore, Karantakan IN</p>
+            </span>
+          </div>
+          <div>
+            <i class="fas fa-phone"></i>
+            <span>
+              <h5>+47 005 00 100</h5>
+              <p>Mandag - Fredag 10-18</p>
+            </span>
+          </div>
+          <div>
+            <i class="fas fa-home"></i>
+            <span>
+              <h5>Bilhuset@biler.no</h5>
+              <p>Send oss email</p>
+            </span>
+          </div>
+        </div>
+        <div class="kontakt-col">
+          <form action="handeler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Skriv inn ditt navn"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Skriv inn din Email adresse"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Skriv her emne"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Skriv til oss"
+              required
+            ></textarea>
+            <button type="submit" class="besøk red-btn">Send Melding</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!----- Footer ----->
+
+    <section class="footer">
+      <h2>Om Oss</h2>
+      <p>
+        Informasjon om oss: <br />Vi er en gruppe som spesialiserer oss innen
+        for biler
+      </p>
+      <div class="icons">
+        <i class="fas fa-facebook"></i>
+        <i class="fas fa-twitter"></i>
+        <i class="fas fa-instagram"></i>
+        <i class="fas fa-linkedin"></i>
+      </div>
+      <p>Made by Said-Magomed Solsaev</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

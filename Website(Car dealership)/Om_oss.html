@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velkommen til BILHUSET</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Bilder/logo.JPG" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HJEM</a></li>
+            <li><a href="bilene.html">BILENE</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+            <li><a href="Om_oss.html">OM OSS</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-ellipsis-h" onclick="showMenu()"></i>
+      </nav>
+      <h1>Om Oss</h1>
+    </section>
+
+    <!---- om oss content ---->
+
+    <section class="Om_oss">
+      <div class="row">
+        <div class="om_oss-col">
+          <h1>Vi er verdens største bilforhandlings bedrift</h1>
+          <p>
+            Våre forhandlere er plassert rundt omkring i hele verden. <br />Vi
+            distribuerer rundt om i hele verden, og har mange fasiliteter rundt
+            omkring i de største byene i hele verden, som for eksempel: Oslo,
+            Berlin og Stockholm.
+          </p>
+          <a href="" class="besøk sjekk_ut">SJEKK UT NÅ</a>
+        </div>
+        <div class="om_oss-col">
+          <img src="bilder/om_oss.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!----- Footer ----->
+
+    <section class="footer">
+      <h2>Om Oss</h2>
+      <p>
+        Informasjon om oss: <br />Vi er en gruppe som spesialiserer oss innen
+        for biler
+      </p>
+      <div class="icons">
+        <i class="fas fa-facebook"></i>
+        <i class="fas fa-twitter"></i>
+        <i class="fas fa-instagram"></i>
+        <i class="fas fa-linkedin"></i>
+      </div>
+      <p>Made by Said-Magomed Solsaev</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
