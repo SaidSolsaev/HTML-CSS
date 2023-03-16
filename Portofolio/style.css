@@ -8,10 +8,10 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: #25b79f;
 }
 
 header{
-    background-color: #25b79f;
     height: 100vh;
 }
 
@@ -24,7 +24,7 @@ header{
 /* navbar */
 
 .navbar{
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 500;
 }
@@ -60,6 +60,31 @@ header{
     order: 1;
     color: #f0f0e6;
     font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-brand:hover{
+    border-bottom: 2px solid white;
+}
+
+.darkmodebtn{
+    position: relative;
+    align-content: center;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    color: white;
+    padding: .3rem;
+}
+.darkmodebtn:hover{
+    border-bottom: 2px solid #f0f0e6;
+}
+
+.dark-mode{
+    background-color: #1F1A24;
+    color: white;
 }
 
 .home-content .name{
@@ -98,3 +123,164 @@ header{
     padding: 1rem;
     transition: 1s ease-in-out;
 }
+
+/* about */
+
+.about-me{
+    padding: 6rem 0;
+}
+
+.about-me .about-heading{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-content img{
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-content p{
+    font-size: 1.2rem;
+    padding: 0 2.3rem;
+    text-align: center;
+}
+
+.skills .skills-heading{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-me .about-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content .left-content{
+    flex-basis: 45%;
+    text-align: center;
+}
+
+.about-content .right-content{
+    flex-basis: 45%;
+}
+
+/* skill bar */
+
+.skills-bar{
+    padding: 25px 30px;
+}
+
+.skills-bar .bar {
+    margin: 25px 0;
+}
+
+.skills-bar .bar .info span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skills-bar .bar .info{
+    margin-bottom: 8px;
+}
+
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 550px;
+    border-radius: 10px;
+    background: #f0f0f0;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, .5, 1) forwards;
+}
+
+.bar .progress-line span{
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #25b79f;
+    animation: animate 1s 1s cubic-bezier(1,0,.5,1) forwards;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.progress-line .html {
+    width: 80%;
+  }
+.progress-line .css {
+    width: 70%;
+}
+.progress-line .java {
+    width: 50%;
+}
+.progress-line .react {
+    width: 65%;
+}
+.progress-line .python {
+    width: 80%;
+}
+.progress-line .js {
+    width: 60%;
+}
+
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 0;
+    width: 0;
+    top: -12px;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-style: #f0f0f0;
+    border-top-color: #f0f0f0;
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #07374a;
+    font-size: 12px;
+    font-weight: 700;
+    background: #f0f0f0;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+.progress-line .html::after {
+    content: "80%";
+}
+
+.progress-line .css::after {
+    content: "70%";
+}
+.progress-line .java::after {
+    content: "50%";
+}
+.progress-line .js::after {
+    content: "60%";
+}
+
+.progress-line .react::after {
+    content: "65%";
+}
+
+.progress-line .python::after {
+    content: "80%";
+}
+
+
+
